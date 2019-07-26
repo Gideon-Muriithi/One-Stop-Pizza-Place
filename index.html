@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href=css/bootstrap.css rel="stylesheet" type="text/css" >
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
@@ -14,6 +14,8 @@
     <title>One Stop Pizza Place</title>
 </head>
 <body>
+    <div>
+    </div>
     <div class="container">
         <div class="navbar">
             <h3><span id="nav">One Stop Pizza Place</span></h3>
@@ -25,8 +27,8 @@
             <br><div class="card" id="header">
                     <img  class="card-img" src="images/img_11.jpg" alt="Pizza Image" id="img_1">
                     <div class="card-img-overlay text-white text-center">
-                        <span class="icon"><img id="img_3" src="images/img_4.jpg" alt="Pizza Image">
-                        <br><br><p class="btn-default">Make an order to confirm for yourself!</p></span>
+                        <span class="icon"><img id="img_4" src="images/img_4.jpg" alt="Pizza Image">
+                        <br><br><span class="btn" id="changetxt"><p>Make an order to confirm for yourself!</p></span>
                         <div class="forPadding">
                          <h1>WELCOME</h1>
                          <h1>TO THE BEST PIZZA PLACE IN TOWN</h1>
@@ -34,8 +36,16 @@
                         </div>    
                     </div>
             </div>
+            <div>
+                
+            </div>
+            <br><div>
+                <h5>Make your order now! Select your preferred pizza additives and size in the section below
+                    and then submit your order.</h5>
+                </h5>
+            </div>
                 <form>
-                    <div class="row"> 
+                    <br><div class="row jumbotron"> 
                         <div class="col-md-3">
                             <div class="form-group">
                               <label>Select Pizza Size Here: </label>
@@ -67,6 +77,7 @@
                                     </div> 
                                 </div>
                     </div>    
+                    <br><button type="submit" class="btn btn-info" id="placement1">Place the order</button>    
                 </form>
     </div>
 </body>

@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 .forPadding{
     position: absolute;
     height: auto;
@@ -11,9 +14,11 @@
   .icon{
       float: right;
   }
-  #img_3{
+  #img_4{
       height: 130px;
       width: 150px;
+      color: tomato;
+      background-color: tomato;
   }
 .navbar {
     overflow: hidden;
@@ -33,4 +38,20 @@
   }
   #nav{
     color: antiquewhite;
+}
+#placement1{
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: 45%;
+  }
+  .jumbotron{
+      background-color: tomato;
+      color: antiquewhite;
+  }
+  h5{
+    font-weight: bolder;
+}
+#changetxt{
+    color: greenyellow;
 }
