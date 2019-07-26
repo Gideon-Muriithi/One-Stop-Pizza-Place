@@ -15,11 +15,14 @@
 </head>
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1>One Stop Pizza</h1>
+        <div class="navbar">
+            <h3><span id="nav">One Stop Pizza Place</span></h3>
+            <div id="subnav">
+                <a href="#One-Stop-Pizza">About Us</a>
+                <a href="Contact-Us">Contact</a>
+            </div>
         </div>
-        
-            <div class="card" id="header">
+            <br><div class="card" id="header">
                     <img  class="card-img" src="images/img_11.jpg" alt="Pizza Image" id="img_1">
                     <div class="card-img-overlay text-white text-center">
                         <span class="icon"><img id="img_3" src="images/img_4.jpg" alt="Pizza Image">
@@ -31,8 +34,40 @@
                         </div>    
                     </div>
             </div>
-               
+                <form>
+                    <div class="row"> 
+                        <div class="col-md-3">
+                            <div class="form-group">
+                              <label>Select Pizza Size Here: </label>
+                              <br><select name="size">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large" selected>Large</option>
+                              </select>
+                            </div> 
+                        </div>
+                        <div class="col-md-5">
+                                <div class="form-group">
+                                  <label>Select Preferred Pizza Topping Here: </label>
+                                  <br><select name="Topping">
+                                    <option value="Pepperoni">Pepperoni</option>
+                                    <option value="Bacon">Bacon</option>
+                                    <option value="Extra Cheese" selected>Extra Cheese</option>
+                                  </select>
+                                </div> 
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label>Select Preferred Pizza Crust Here: </label>
+                                      <select name="Crust">
+                                        <option value="Crispy">Crispy</option>
+                                        <option value="Stuffy">Stuffy</option>
+                                        <option value="Gluten-free" selected>Gluten-free</option>
+                                      </select>
+                                    </div> 
+                                </div>
+                    </div>    
+                </form>
     </div>
-    
 </body>
 </html>

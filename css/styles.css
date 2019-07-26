@@ -15,7 +15,22 @@
       height: 130px;
       width: 150px;
   }
-.jumbotron{
-   color: red;
-   height: 17px;
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #subnav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  #subnav a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  #nav{
+    color: antiquewhite;
 }
