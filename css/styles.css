@@ -1,0 +1,21 @@
+.forPadding{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 70%;
+    left: 22%;
+  }
+  #img_1{
+      height: 600px;
+  }
+  .icon{
+      float: right;
+  }
+  #img_3{
+      height: 130px;
+      width: 150px;
+  }
+.jumbotron{
+   color: red;
+   height: 17px;
+}
