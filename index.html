@@ -39,17 +39,22 @@
             <div>
                 
             </div>
-            <br><div>
-                <h5>Make your order now! Select your preferred pizza additives and size in the section below
-                    and then submit your order.</h5>
-                </h5>
+            <br>
+            <div>
+                <h5>Make your order now! Select your preferred pizza additives and size in the section below. If you would 
+                    like the pizza(s) delievered to you, please select that. The final step will be to place your order by
+                    clicking place the order button. Please note a delivery fee of Ksh. 250 is charged on
+                every delivery made.</h5>
+            </h5>
             </div>
                 <form>
-                    <br><div class="row jumbotron"> 
+                    <br>
+                    <div class="row jumbotron" id="forform"> 
                         <div class="col-md-3">
                             <div class="form-group">
                               <label>Select Pizza Size Here: </label>
-                              <br><select name="size">
+                              <br>
+                              <select name="size" id="size">
                                 <option value="Small">Small</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Large" selected>Large</option>
@@ -59,7 +64,8 @@
                         <div class="col-md-5">
                                 <div class="form-group">
                                   <label>Select Preferred Pizza Topping Here: </label>
-                                  <br><select name="Topping">
+                                  <br>
+                                  <select name="Topping" id="Topping">
                                     <option value="Pepperoni">Pepperoni</option>
                                     <option value="Bacon">Bacon</option>
                                     <option value="Extra Cheese" selected>Extra Cheese</option>
@@ -69,7 +75,8 @@
                             <div class="col-md-4">
                                     <div class="form-group">
                                       <label>Select Preferred Pizza Crust Here: </label>
-                                      <select name="Crust">
+                                      <br>
+                                      <select name="Crust" id="Crust">
                                         <option value="Crispy">Crispy</option>
                                         <option value="Stuffy">Stuffy</option>
                                         <option value="Gluten-free" selected>Gluten-free</option>
@@ -77,8 +84,35 @@
                                     </div> 
                                 </div>
                     </div>    
-                    <br><button type="submit" class="btn btn-info" id="placement1">Place the order</button>    
+                    <br><button type="submit" class="btn" id="orderPlacement">Click Here to Place the Order</button> 
+                    <button  class="btn" id="delivery">In Need Of Delivery Service?</button>   
                 </form>
+            <br><br>
+            <h5>We only do deliveries in the following locations:</h5>
+            <div class="card">
+                <table width="100%">
+                    <tr>
+                        <th>Locations within Nairobi</th>
+                        <th>Locations outside Nairobi</th>
+                    </tr> 
+                    <tr>
+                        <td>Westlands</td>
+                        <td>Ruiru</td>
+                    </tr>
+                    <tr>
+                        <td>Embakasi</td>
+                        <td>Athi River</td>
+                    </tr>
+                    <tr>
+                        <td>Upperhill</td>
+                        <td>Kikuyu</td>
+                    </tr>
+                    <tr>
+                        <td>Parklands</td>
+                        <td>Limuru</td>
+                    </tr>
+                </table>
+            </div>
     </div>
 </body>
 </html>
