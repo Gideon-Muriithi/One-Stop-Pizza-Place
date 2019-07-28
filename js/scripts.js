@@ -41,6 +41,7 @@ $(document).ready(function(){
        var selectedTopping = $("input[name='topping']:checked", '#forForm').val();
        var selectedCrust = $("input[name='crust']:checked", '#forForm').val();
        var newPizza = new Pizza(selectedSize, selectedTopping,selectedCrust);
+       var orderPizza = new Pizza(selectedSize, selectedTopping,selectedCrust);
        
        $("ol#properties").append("<li>" + newPizza.combineProperties() + "</li>");
    
