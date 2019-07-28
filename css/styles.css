@@ -44,7 +44,6 @@ body{
     height: auto;
     width: auto;
     left: 65%;
-    background-color: tomato;
     color: antiquewhite;
   }
   .jumbotron{
@@ -61,7 +60,9 @@ body{
     font-size: 20px;
 }
 #delivery{
-  background-color: tomato;
+  color: antiquewhite;
+}
+#delivery1{
   color: antiquewhite;
 }
 #size{
