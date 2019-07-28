@@ -4,6 +4,9 @@ function Pizza(size,topping,crust){
     this.topping = topping;
     this.crust = crust;
 }
+Pizza.prototype.combineProperties = function() {
+    return this.size + "" + this.topping + "" + this.crust;
+}
 
 //User Interface logic
 $(document).ready(function(){
