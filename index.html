@@ -47,29 +47,29 @@
                 every delivery made.</h5>
             </h5>
             </div>
-                <form>
+                <form id="takeInputs">
                     <br>
-                    <div class="row jumbotron" id="forform"> 
+                    <div class="row jumbotron" id="forForm"> 
                         <div class="col-md-3">
-                            <div class="form-group">
+                            <div class="tab" id="sizeSelection"> 
                               <label>Select Pizza Size Here: </label>
                               <br>
-                              <select name="size" id="size">
-                                <option value="Small">Small</option>
-                                <option value="Medium">Medium</option>
-                                <option value="Large" selected>Large</option>
-                              </select>
+                              <input type="radio" name="size" value="Large" oninvalid="alert('You must select size!');"required/>Large
+                              <br>
+                              <input type="radio" name="size" value="Medium"  />Medium
+                              <br>
+                              <input type="radio" name="size" value="Small">Small
                             </div> 
                         </div>
                         <div class="col-md-5">
-                                <div class="form-group">
+                                <div class="tab">
                                   <label>Select Preferred Pizza Topping Here: </label>
                                   <br>
-                                  <select name="Topping" id="Topping">
-                                    <option value="Pepperoni">Pepperoni</option>
-                                    <option value="Bacon">Bacon</option>
-                                    <option value="Extra Cheese" selected>Extra Cheese</option>
-                                  </select>
+                                    <input type="radio" name="topping" value="Pepperoni"/>Pepperoni
+                                    <br>
+                                    <input type="radio" value="Bacon"/>Bacon
+                                    <br>
+                                    <input type="radio" value="Extra Cheese"/>Extra Cheese
                                 </div> 
                             </div>
                             <div class="col-md-4">
@@ -84,7 +84,7 @@
                                     </div> 
                                 </div>
                     </div>    
-                    <button type="submit" class="btn btn-success" id="orderPlacement">Checkout</button> 
+                    <button type="submit" value="submit" class="btn btn-success" id="orderPlacement">Checkout</button> 
                     <button  class="btn btn-success" id="delivery">In Need Of Delivery Service?</button>
                     <button  class="btn btn-success" id="delivery1">Not In Need Of Delivery Service?</button>    
                 </form>
