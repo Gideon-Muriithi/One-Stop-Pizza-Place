@@ -65,29 +65,35 @@
                                 <div class="tab">
                                   <label>Select Preferred Pizza Topping Here: </label>
                                   <br>
-                                    <input type="radio" name="topping" value="Pepperoni"/>Pepperoni
+                                    <input type="radio" name="topping" value="Pepperoni" oninvalid="alert('You must select topping!');"required/>Pepperoni
                                     <br>
-                                    <input type="radio" value="Bacon"/>Bacon
+                                    <input type="radio" name="topping" value="Bacon"/>Bacon
                                     <br>
-                                    <input type="radio" value="Extra Cheese"/>Extra Cheese
+                                    <input type="radio" name="topping" value="Extra Cheese"/>Extra Cheese
                                 </div> 
                             </div>
                             <div class="col-md-4">
-                                    <div class="form-group">
+                                    <div class="tab">
                                       <label>Select Preferred Pizza Crust Here: </label>
                                       <br>
-                                      <select name="Crust" id="Crust">
-                                        <option value="Crispy">Crispy</option>
-                                        <option value="Stuffy">Stuffy</option>
-                                        <option value="Gluten-free" selected>Gluten-free</option>
-                                      </select>
+                                      <input type="radio" name="crust" value="Crispy" oninvalid="alert('You must select crust!');"required/>Crispy
+                                      <br>
+                                      <input type="radio" name="crust" value="Stuffy"/>Stuffy
+                                      <br>
+                                      <input type="radio" name="crust" value="Gluten-free"/>Gluten-free
                                     </div> 
                                 </div>
                     </div>    
-                    <button type="submit" value="submit" class="btn btn-success" id="orderPlacement">Checkout</button> 
-                    <button  class="btn btn-success" id="delivery">In Need Of Delivery Service?</button>
-                    <button  class="btn btn-success" id="delivery1">Not In Need Of Delivery Service?</button>    
+                    <span  class="btn btn-success" id="delivery">In Need Of Delivery Service?</span>
+                    <span  class="btn btn-success" id="delivery1">Not In Need Of Delivery Service?</span>
+                    <button type="submit" value="submit" class="btn btn-success" id="orderPlacement">Checkout</button>     
                 </form>
+                
+                <br>
+                <h5>You have ordered the following pizza(s):</h5>
+                <ol id="properties">
+
+                </ol>   
             <br><br>
             <h5>Please note if your locations is not among the following locations your order(s) might take longer to be delivered.</h5>
             <br>
