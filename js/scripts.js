@@ -10,19 +10,21 @@ Pizza.prototype.combineProperties = function() {
 
 //User Interface logic
 $(document).ready(function(){
-
+   
     $("#delivery").click(function(){
-        var location = prompt("Please enter your location.");
-
+       var location = prompt("Please enter your location.");
+       window.location2 = location;
+      
       if(location != null){
       alert("You will be charged Ksh. 250 delivery fee.");
        alert("Your order will be delivered to your location.");
        }else{
           alert("You have cancelled delivery.");
       }
-    
-   });
+      alert(location2);
 
+   });
+  
      $("#delivery1").click(function(){
           alert("Then proceed to place your order by checking out on your right.");
      });
@@ -36,6 +38,7 @@ $(document).ready(function(){
        var newPizza = new Pizza(selectedSize, selectedTopping,selectedCrust);
        
        $("ol#properties").append("<li>" + newPizza.combineProperties() + "</li>");
-     
+   
     });
+  
 });
