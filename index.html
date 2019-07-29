@@ -80,48 +80,57 @@
                             <div class="tab" id="sizeSelection"> 
                               <label>Select Pizza Size Here: </label>
                               <br>
-                              <input type="radio" name="size" value="Large" oninvalid="alert('You must select size!');"required/>Large
+                              <input type="radio" name="size" value="300" oninvalid="alert('You must select size!');"required/>Large
                               <br>
-                              <input type="radio" name="size" value="Medium"  />Medium
+                              <input type="radio" name="size" value="200"  />Medium
                               <br>
-                              <input type="radio" name="size" value="Small">Small
+                              <input type="radio" name="size" value="100">Small
                             </div> 
                         </div>
                         <div class="col-md-5">
                                 <div class="tab">
                                   <label>Select Preferred Pizza Topping Here: </label>
                                   <br>
-                                    <input type="radio" name="topping" value="Pepperoni" oninvalid="alert('You must select topping!');"required/>Pepperoni
+                                    <input type="radio" name="topping" value="200" oninvalid="alert('You must select topping!');"required/>Pepperoni
                                     <br>
-                                    <input type="radio" name="topping" value="Bacon"/>Bacon
+                                    <input type="radio" name="topping" value="250"/>Bacon
                                     <br>
-                                    <input type="radio" name="topping" value="Extra-Cheese"/>Extra-Cheese
+                                    <input type="radio" name="topping" value="150"/>Extra-Cheese
                                 </div> 
                             </div>
                             <div class="col-md-4">
                                     <div class="tab">
                                       <label>Select Preferred Pizza Crust Here: </label>
                                       <br>
-                                      <input type="radio" name="crust" value="Crispy" oninvalid="alert('You must select crust!');"required/>Crispy
+                                      <input type="radio" name="crust" value="200" oninvalid="alert('You must select crust!');"required/>Crispy
                                       <br>
-                                      <input type="radio" name="crust" value="Stuffy"/>Stuffy
+                                      <input type="radio" name="crust" value="150"/>Stuffy
                                       <br>
-                                      <input type="radio" name="crust" value="Gluten-free"/>Gluten-free
+                                      <input type="radio" name="crust" value="200"/>Gluten-free
                                     </div> 
                                 </div>
-                    </div>    
-                    <span  class="btn btn-success" id="delivery">In Need Of Delivery Service?</span>
-                    <span  class="btn btn-success" id="delivery1">Not In Need Of Delivery Service?</span>
+                    </div>  
+                     <h5>In Need of a Delivery Service?</h5>  
+                      <input  type="radio" id="yes" class="btn btn-success" name="delivery" value="yes">Yes</input>
+                      <br><br>
+                      <input  type="radio" id="delivery1" class="btn btn-success" name="delivery" value="no">No</input>
                     <button type="submit" value="submit" class="btn btn-success" id="orderPlacement">Checkout</button>     
                 </form>
                 
                 <br>
                 <div class="row">
-                  <h5>You have ordered the following pizza(s):</h5>
-                  <ol id="properties" class="btn-success"> 
+                    <div class="col-md-8">
+                       <h5>You have ordered the following pizza(s):</h5>
+                       <ol id="properties" class="btn-success"> 
 
-                  </ol>
-                
+                      </ol>
+                      </div>
+                      <div class="col-md-4" >
+                          <h5>Total amount charged for the order(s) is:</h5>
+                          <p id="charges">
+
+                          </p>
+                      </div>
                 </div>
             <br><br>
             <h5>Please note if your locations is not among the following locations your order(s) might take longer to be delivered.</h5>
