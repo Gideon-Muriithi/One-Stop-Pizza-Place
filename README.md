@@ -1,5 +1,5 @@
 Ones Stop Pizza Place
-This is the landing page for Pizza Palace
+This is the landing page for One Stop Pizza Place
 By Gideon Muriithi
 link to live site [https://gideon-muriithi.github.io/One-Stop-Pizza-Place/]
 Description
@@ -8,7 +8,7 @@ This landing page consists of the following sections: 1.Header 2.About Us Sectio
 Project setup instructions
 To start using this project use the following commands:
 
-`git clone https://github.com/Oduory/pizza
+`git clone https://gideon-muriithi.github.io/One-Stop-Pizza-Place/
 `cd pizza
 
 code . (Or type your preferred code editor and the . then hit enter)
@@ -28,7 +28,7 @@ Add changes to reflect the changes made
 Commit your changes (git commit -m "myFavourite")
 Push to the branch (git push origin myFavourite)
 Create a Pull Request
-#Authors Information: Contact me via my faceBook Page  @GideonMuriithi
+#Authors Information: Contact me via my FaceBook Page  @GideonMuriithi
 
 License
 The MIT licence Copyright (c) 2019 Gideon Muriithi MIT License
