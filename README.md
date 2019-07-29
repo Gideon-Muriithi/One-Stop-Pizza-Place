@@ -1,7 +1,7 @@
 Ones Stop Pizza Place
 This is the landing page for Pizza Palace
 By Gideon Muriithi
-link to live site []
+link to live site [https://gideon-muriithi.github.io/One-Stop-Pizza-Place/]
 Description
 This landing page consists of the following sections: 1.Header 2.About Us Section 3.Our Menu section 4.Order online section.
 
