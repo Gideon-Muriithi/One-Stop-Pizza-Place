@@ -13,9 +13,11 @@ Pizza.prototype.sizeToppingCrust = function(){
     return this.size + " " + this.topping + " " + this.crust;
 }
 
+
 //User Interface logic
 
 $(document).ready(function(){
+    
     var location = " ";
     $("#delivery").click(function(){
        location = prompt("Please enter your location.");
