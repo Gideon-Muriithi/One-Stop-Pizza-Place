@@ -74,4 +74,25 @@ body{
   background-color: tomato;
   color: antiquewhite;
 }
+#styling{
+  text-align: justify;
+  text-align: center;
+  font-size: 17px;
+}
+h3{
+  text-align: center;
+}
+#img_04{
+  height: 200px;
+}
+#img_03{
+  height: 200px;
+}
 
+#img_02{
+  height: 200px;
+}
+
+#img_01{
+  height: 200px;
+}
