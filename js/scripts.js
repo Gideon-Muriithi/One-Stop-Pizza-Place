@@ -14,19 +14,19 @@ Pizza.prototype.sizeToppingCrust = function(){
 }
 
 //User Interface logic
+
 $(document).ready(function(){
-   
+    var location = " ";
     $("#delivery").click(function(){
-       var location = prompt("Please enter your location.");
-       window.location2 = location;
-      
+       location = prompt("Please enter your location.");
+     
       if(location != null){
       alert("You will be charged Ksh. 250 delivery fee.");
        alert("Your order will be delivered to your location.");
        }else{
-          alert("You have cancelled delivery.");
+        alert("You have cancelled delivery.");
       }
-      alert(location2);
+      //alert(location);
 
    });
   
@@ -42,6 +42,14 @@ $(document).ready(function(){
        var selectedCrust = $("input[name='crust']:checked", '#forForm').val();
        var newPizza = new Pizza(selectedSize, selectedTopping,selectedCrust);
        var orderPizza = new Pizza(selectedSize, selectedTopping,selectedCrust);
+       
+       if(orderPizza.sizeToppingCrust() == "Large Pepperoni Crispy"){
+           alert("Your total charges is Ksh. 300");
+       }else{
+           alert("Failure!");
+       }
+
+       alert(location);
        
        $("ol#properties").append("<li>" + newPizza.combineProperties() + "</li>");
    
