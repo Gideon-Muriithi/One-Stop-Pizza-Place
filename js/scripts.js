@@ -24,6 +24,7 @@ $(document).ready(function(){
     
     $("form#takeInputs").submit(function(event){
        event.preventDefault();
+
        var selectedSize = parseInt($("input[name='size']:checked", '#forForm').val());     
        var selectedTopping = parseInt($("input[name='topping']:checked", '#forForm').val());
        var selectedCrust = parseInt($("input[name='crust']:checked", '#forForm').val());
@@ -41,7 +42,7 @@ $(document).ready(function(){
          deliveryFee = 0;
        }
         
-       $("p#charges").append(newPizza.sizeToppingCrust() + deliveryFee);
+       $("ol#charges").append("<li>" + newPizza.sizeToppingCrust() + deliveryFee + "</li>");
     
        $("ol#properties").append("<li>" + newPizza.combineProperties() + "</li>");
 

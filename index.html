@@ -81,11 +81,11 @@
                             <div class="tab" id="sizeSelection"> 
                               <label>Select Pizza Size Here: </label>
                               <br>
-                              <input type="radio" name="size" value="300" oninvalid="alert('You must select size!');"required/>Large
+                              <input type="radio" name="size" value="300" val1 ="Large" oninvalid="alert('You must select size!');"required/>Large
                               <br>
-                              <input type="radio" name="size" value="200"  />Medium
+                              <input type="radio" name="size" value="200" val1="Medium" />Medium
                               <br>
-                              <input type="radio" name="size" value="100">Small
+                              <input type="radio" name="size" value="100" val1="Small">Small
                             </div> 
                         </div>
                         <div class="col-md-5">
@@ -128,9 +128,10 @@
                       </div>
                       <div class="col-md-4" >
                           <h5>Total amount charged for the order(s) is:</h5>
-                          <p id="charges">
+                          <ol id="charges">
 
-                          </p>
+                            
+                          </ol>
                       </div>
                 </div>
             <br><br>
